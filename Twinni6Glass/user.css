@@ -1,0 +1,1310 @@
+:root {
+  --corner-radius: 15px;
+  --corner-radius-xl: 25px;
+  --bar-cover-art-size: 35px;
+  --scrollbar-vertical-size: 0px;
+  --scrollbar-horizontal-size: 0px;
+  --bar-height: 80px;
+  --main-gap: 10px;
+  --spice-card: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: hsl(var(--shadow-color) / 0.35) 0px 2.5px 2.1px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  backdrop-filter: blur(15px) saturate(1.2);
+
+  --fluid-color: rgba(0, 0, 0, 0.2);
+
+  --glass-bg: hsla(0, 0%, 41%, 0);
+  --glass-muted-bg: hsla(0, 0%, 0%, 0.046);
+  --glass-hover-bg: hsla(0, 0%, 50%, 0.2);
+  --box-shadow-color: box-shadow rgba(50, 50, 93, 0.15) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  --glass-alpha: 0.2;
+
+  --shadow-color: 286deg 36% 40%;
+  --shadow-elevation-low: 0.3px 0.5px 0.4px hsl(var(--shadow-color) / 1),
+    0.4px 0.8px 0.7px -2.5px hsl(var(--shadow-color) / 0.69),
+    1.3px 2.5px 2.1px -5px hsl(var(--shadow-color) / 0.35);
+}
+
+@font-face {
+  font-family: "SF Mono", sans-serif;
+  src: url("https://fonts.cdnfonts.com/css/sf-mono");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Mono", sans-serif;
+  src: url("https://fonts.cdnfonts.com/css/sf-mono");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF Mono", sans-serif;
+  src: url("https://fonts.cdnfonts.com/css/sf-mono");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Mono", sans-serif;
+  src: url("https://fonts.cdnfonts.com/css/sf-mono");
+  font-style: normal;
+  font-weight: 500;
+}
+
+body {
+  --glue-font-family: "Google Sans Display", "SF Mono", "Roboto",
+    spotify-circular, spotify-circular-cyrillic, spotify-circular-arabic,
+    spotify-circular-hebrew, Helvetica Neue, helvetica, arial,
+    Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+  --info-font-family: "Roboto", spotify-circular, spotify-circular-cyrillic,
+    spotify-circular-arabic, spotify-circular-hebrew, Helvetica Neue, helvetica,
+    arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+  font-family: var(--glue-font-family);
+  letter-spacing: normal;
+  background-color: none !important;
+  border-radius: var(--corner-radius-xl) !important;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
+  color: var(--spice-text-light) !important;
+}
+
+.znOINyqAy7ivIGbQyrbt {
+  background-color: var(--spice-player) !important;
+  border-radius: var(--corner-radius);
+  backdrop-filter: blur(15px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: var(--spice-text) !important;
+}
+
+.sl_aPp6GDg05ItSfmsS7 {
+  display: none !important;
+  background-color: transparent !important;
+  height: 0 !important;
+}
+
+.AdMqbnDlLVSq2DnuvUmY {
+  background-color: var(--spice-button-text) !important;
+  border-radius: var(--corner-radius);
+  margin-left: 20px;
+}
+
+.e-91000-text .encore-text-body-medium-bold {
+  color: var(--spice-text) !important;
+}
+
+.AdMqbnDlLVSq2DnuvUmY * {
+  background-color: transparent !important;
+  color: var(--spice-text);
+}
+
+.main-view-container__scroll-node .mpdgC9UTkN5_fMm1pFiz {
+  background-color: transparent !important;
+  border-radius: var(--corner-radius);
+  margin-left: 20px;
+}
+
+/* 1) Treat playbar as flex with ordering */
+.main-nowPlayingBar-nowPlayingBar {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Album cover smaller */
+.main-nowPlayingBar-coverArt {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Equal horizontal spacing between cover, left icons, center controls, right area */
+.main-nowPlayingBar-nowPlayingBar > * {
+  margin: 0 8px !important;
+}
+
+.main-coverSlotCollapsed-container .main-coverSlotCollapsed-navAltContainer {
+  max-width: 20% !important;
+  max-height: 20%;
+}
+
+.global-nav .Root__top-container {
+  grid-template-areas:
+    "top-banner top-banner top-banner"
+    "global-nav global-nav global-nav"
+    "left-sidebar main-view right-sidebar"
+    "left-sidebar now-playing-bar now-playing-bar" !important;
+  grid-template-rows: auto auto 2fr auto;
+}
+.e-91000-icon .e-91000-baseline {
+  fill: var(--spice-sidebar-text) !important;
+}
+
+.main-topBar-container::after {
+  background-color: transparent !important;
+  border-radius: var(--corner-radius) var(--corner-radius) !important;
+  backdrop-filter: blur(15px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: rgba(25, 25, 25, 0.25);
+}
+
+.main-yourLibraryX-libraryContainer {
+  background: transparent !important;
+  backdrop-filter: blur(10px);
+  padding-top: 20px;
+}
+
+.main-contextMenu-menuItemButton {
+  color: var(--spice-text) !important;
+}
+
+.Root__right-sidebar a,
+.Root__right-sidebar .main-trackInfo-artists a,
+.artist-artistOnTour-timeAndVenue.artist-artistOnTour-condensed,
+.Root__right-sidebar .main-nowPlayingView-creditsSource,
+.Root__right-sidebar .main-nowPlayingView-playNextButton,
+.Root__right-sidebar .main-nowPlayingView-playNext {
+  color: var(--spice-text-light), 1 !important;
+}
+
+.Root__top-container {
+  grid-template-areas:
+    "left-sidebar main-view right-sidebar"
+    "left-sidebar now-playing-bar right-sidebar" !important;
+  gap: 0;
+  padding-left: 10px !important;
+}
+
+.encore-internal-color-text-subdued .Specificity {
+  color: var(--spice-subtext) !important;
+}
+
+.main-nowPlayingView-section {
+  color: var(--spice-text) !important;
+  background-color: var(--spice-player) !important;
+}
+
+.main-nowPlayingView-section
+  .main-nowPlayingView-credits
+  .Uw4tcZdmh7s4BMdgCCuu {
+  color: var(--spice-main) !important;
+  background-color: var(--spice-main) !important;
+}
+
+.Uw4tcZdmh7s4BMdgCCuu {
+  background-color: var(--spice-player) !important;
+}
+
+.global-nav #Desktop_PanelContainer_Id {
+  border-radius: 15px 15px !important;
+}
+
+.iGRaSZDa1r0m21aF6oZq {
+  background-color: var(--spice-player) 0.1 !important;
+  backdrop-filter: blur(15px) saturate(1.2);
+}
+
+.Button-sc-1dqy6lx-0
+  .Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle
+  .e-91000-overflow-wrap-anywhere
+  .e-91000-button-tertiary--icon-only
+  .link-subtle
+  .main-globalNav-navLink
+  .main-globalNav-link-icon
+  .custom-navlink {
+  background-color: var(--spice-player) !important;
+  color: var(--spice-rgb-sidebar-text);
+}
+
+.Root__now-playing-bar,
+.main-nowPlayingBar-container {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.Root__globalNav {
+  --left-sidebar-width: 60;
+  background-color: transparent !important;
+  border-radius: var(--corner-radius) !important;
+  margin: 0;
+  grid-area: top-banner/1/global-nav/-1;
+  margin-left: calc(var(--left-sidebar-width) * 1px);
+  z-index: 10;
+}
+.link-subtle .main-globalNav-historyButtons {
+  background-color: white !important;
+}
+
+.Root__globalNav .main-globalNav-historyButtonsContainer,
+.Root__globalNav .main-globalNav-searchSection,
+.Root__globalNav .main-topBar-topbarContentRight {
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  background-color: transparent !important;
+}
+
+.global-nav .Root__main-view {
+  border-radius: var(--corner-radius) var(--corner-radius) 0 0 !important;
+}
+
+.Root__main-view {
+  border-radius: var(--corner-radius) var(--corner-radius) 0 0 !important;
+  grid-area: main-view !important;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.main-topBar-background {
+  border-radius: var(--corner-radius) var(--corner-radius) !important;
+  backdrop-filter: blur(15px) saturate(1.2);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.encore-text-body-small-bold .e-91000-button-primary .e-91000-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+.legacy .Root__top-container:not(:has(> .Root__right-sidebar)) {
+  padding-right: var(--main-gap);
+}
+
+.ylx .Root__top-container:not(:has(> .Root__right-sidebar > aside)) {
+  padding-right: var(--main-gap);
+}
+
+.Root__right-sidebar:not(:has(> aside)) {
+  padding-left: 20px;
+}
+
+.Root__nav-bar {
+  grid-area: left-sidebar !important;
+  margin-top: -60px;
+  background-color: var(--spice-player), 0.5;
+  backdrop-filter: blur(15px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: var(--corner-radius) var(--corner-radius) !important;
+}
+
+.encore-internal-color-text-subdued {
+  color: var(--spice-subtext) !important;
+}
+/* move the progress bar to the top */
+.playback-bar {
+  --progress-bar-height: 5px;
+  --progress-bar-radius: 999px;
+  --fg-color: var(--spice-accent);
+  --bg-color: var(--spice-accent_inactive);
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  max-width: 40%;
+  left: 38%;
+}
+
+.main-topBar-searchBar {
+  background-color: white 1 !important;
+  border-radius: var(--corner-radius);
+  backdrop-filter: blur(15px) saturate(1.2);
+}
+
+.main-nowPlayingBar-nowPlayingBar {
+  position: fixed !important;
+  left: 50%;
+  bottom: 36px;
+  transform: translateX(-50%);
+  width: 55%;
+  max-height: 54px;
+  background-color: var(--spice-player) 0.1 !important;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: hsl(var(--shadow-color) / 0.35) 0px 2.5px 2.1px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  backdrop-filter: blur(15px) saturate(1.2);
+  padding-inline: 10px !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tahoe-playbar-button:active {
+  background: rgba(var(--spice-rgb-text), 0.16) !important;
+  transform: scale(0.98) !important;
+}
+
+.progress-bar {
+  --progress-bar-height: 2px;
+  --progress-bar-radius: 25px;
+  --fg-color: var(--spice-accent);
+  --bg-color: var(--spice-accent_inactive) 0.15;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 30px;
+  max-width: 100%;
+  right: 5%;
+  top: 5%;
+}
+
+.main-nowPlayingBar-container {
+  background-color: transparent !important;
+  /* From https://css.glass */
+  border-radius: 0px;
+  border: none !important;
+  border-top: none !important;
+  padding: 8px;
+}
+
+/* rearrange player bar */
+.main-nowPlayingBar-left {
+  order: 1;
+  flex: 1;
+  width: auto;
+  min-width: unset !important;
+}
+
+.main-nowPlayingBar-center {
+  order: 0;
+  flex: 1;
+  width: auto;
+  min-width: unset !important;
+}
+
+.main-nowPlayingBar-right {
+  order: 2;
+  flex: 1;
+  width: auto;
+  min-width: unset !important;
+}
+
+/* hide time elapsed */
+.main-playbackBarRemainingTime-container,
+.playback-bar__progress-time-elapsed {
+  display: none;
+}
+
+/* custom dynamic prog tooltip */
+.playback-bar .prog-tooltip {
+  position: absolute;
+  width: 60%;
+  height: 25px;
+  top: 35px;
+  padding: 10px 10px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  text-align: center;
+  color: var(--spice-text);
+  background-color: var(--spice-player);
+  opacity: 0;
+  transition: opacity 0.2s linear, left 0.2s linear;
+}
+
+.playback-bar:hover .prog-tooltip {
+  opacity: 1;
+}
+
+/* style navbar */
+.main-navBar-mainNav {
+  gap: 0 !important;
+}
+
+.main-navBar-mainNav > div {
+  background-color: var(--spice-player) 0.2 !important;
+  border-radius: 25px;
+  box-shadow: 0 18px 15px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(24px) saturate(1.4);
+}
+
+.main-yourLibraryX-navLink {
+  height: 48px;
+  background-color: transparent !important;
+}
+
+/* change tab colours */
+.main-navBar-mainNav .link-subtle,
+.main-navBar-mainNav .link-subtle svg {
+  color: var(--spice-sidebar-text) !important;
+}
+
+/* give active nav tab a background */
+.main-navBar-mainNav li:has(> .active) {
+  background-color: var(--spice-tab-active);
+  border-radius: 4px;
+}
+
+/* align library button with other nav items */
+.main-yourLibraryX-header {
+  padding-top: 4px !important;
+}
+
+.main-yourLibraryX-navItems {
+  padding-bottom: 0 !important;
+  padding: 0px;
+}
+
+.main-yourLibraryX-navItems li {
+  padding-left: 0px;
+}
+
+/* remove built in scrolllist shadow */
+.main-yourLibraryX-isScrolled {
+  box-shadow: none !important;
+}
+
+/* round playlist images */
+.x-entityImage-imageContainer {
+  border-radius: 10px !important;
+  background-color: transparent;
+  width: 45px !important;
+  height: 45px !important;
+  align-self: center;
+  box-shadow: none !important;
+}
+
+li div:has(> .x-entityImage-imageContainer),
+li div:has(> .main-yourLibraryX-rowCover) {
+  justify-content: center;
+  width: 48px;
+}
+
+/* folder items */
+.x-entityImage-imagePlaceholder {
+  background-color: var(--spice-main);
+  color: var(--spice-sidebar-text);
+}
+
+/* local files item */
+.main-yourLibraryX-rowCover {
+  width: 40px;
+  height: 40px;
+}
+
+.fRZRXRIV2YBCFLYgwDAr {
+  border-radius: 50% !important;
+}
+
+.fRZRXRIV2YBCFLYgwDAr > svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* remove hover effect */
+li > div > div::after {
+  background-color: var(--spice-main) !important;
+}
+
+li > div::after {
+  background-color: var(--spice-selected-row) !important;
+}
+
+/* give background to active playlist */
+.BoxComponent-group-tinted-listRow-isInteractive-hasLeadingOrMedia-paddingBlockStart_8px-paddingBlockEnd_8px-minBlockSize_56px-padding_8px,
+.BoxComponent-group-tinted-listRow-isInteractive-hasFocus-hasLeadingOrMedia-paddingBlockStart_8px-paddingBlockEnd_8px-minBlockSize_56px-padding_8px {
+  background-color: var(--spice-tab-active);
+}
+
+/* fix scrolllist item colours */
+.main-navBar-mainNav li p {
+  color: var(--spice-sidebar-text) !important;
+}
+
+.main-navBar-mainNav li p svg {
+  fill: var(--spice-sidebar-text) !important;
+}
+
+.main-yourLibraryX-listRowIconWrapper {
+  fill: var(--spice-sidebar-text) !important;
+}
+
+/* reduce spacing between playlist name and subtitle */
+.main-yourLibraryX-listRowSubtitle {
+  margin-top: -8px;
+}
+
+.main-yourLibraryX-collapseButton > button {
+  gap: 8px;
+  color: var(--spice-sidebar-text) !important;
+}
+
+/* expanded sidebar buttons */
+.search-searchCategory-carouselButton {
+  background-color: transparent;
+}
+
+.search-searchCategory-carouselButton:hover {
+  background-color: transparent !important;
+}
+
+.search-searchCategory-carouselButton svg {
+  fill: transparent !important;
+}
+
+.main-yourLibraryX-iconOnly {
+  color: var(--spice-text) !important;
+}
+
+.main-yourLibraryX-iconOnly:hover {
+  background-color: transparent;
+}
+
+.main-yourLibraryX-filterArea > div > div:first-child button {
+  background-color: transparent !important;
+}
+
+.main-yourLibraryX-filterArea > div > div:first-child button > span {
+  background-color: transparent !important;
+  color: var(--spice-text) !important;
+}
+
+.main-yourLibraryX-libraryFilter .x-sortBox-sortDropdown,
+.main-yourLibraryX-libraryFilter .x-filterBox-expandButton,
+.main-yourLibraryX-libraryFilter .x-filterBox-searchIconContainer,
+.main-yourLibraryX-libraryFilter .x-filterBox-filterInput,
+.main-yourLibraryX-libraryFilter .x-filterBox-clearButton {
+  color: var(--spice-sidebar-text);
+}
+
+/* Main window background very close to Apple Music */
+.Root__main-view,
+.Root__top-container,
+.global-nav .Root__main-view {
+  background-color: var(--spice-main) !important;
+  background-image: none !important;
+}
+
+/* Remove playlist body gradient, keep flat light background */
+.main-entityHeader-withBackgroundImage
+  + .main-view-container__scroll-node-child,
+.main-entityHeader-background.main-entityHeader-overlay::after {
+  background: transparent !important;
+}
+.main-topBar-background {
+  border-radius: var(--corner-radius);
+}
+
+.main-topBar-overlay,
+.main-trackList-trackListHeader {
+  background-color: transparent !important;
+}
+
+/* fix playlist action bar buttons colour */
+.main-actionBar-ActionBarRow button,
+.main-actionBar-ActionBarRow svg:not(.main-playButton-PlayButton svg) {
+  color: rgba(var(--spice-rgb-text), 0.7);
+}
+
+.main-actionBar-ActionBarRow button:hover,
+.main-actionBar-ActionBarRow
+  button:hover
+  svg:not(.main-playButton-PlayButton svg) {
+  color: var(--spice-text);
+}
+
+/* change playing icon from gif to svg */
+.main-trackList-playingIcon {
+  mask-image: url("data:image/svg+xml,%3Csvg id='playing-icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 24'%3E%3Cdefs%3E%3Cstyle%3E %23playing-icon %7B fill: %2320BC54; %7D @keyframes play %7B 0%25 %7Btransform: scaleY(1);%7D 3.3%25 %7Btransform: scaleY(0.9583);%7D 6.6%25 %7Btransform: scaleY(0.9166);%7D 9.9%25 %7Btransform: scaleY(0.8333);%7D 13.3%25 %7Btransform: scaleY(0.7083);%7D 16.6%25 %7Btransform: scaleY(0.5416);%7D 19.9%25 %7Btransform: scaleY(0.4166);%7D 23.3%25 %7Btransform: scaleY(0.25);%7D 26.6%25 %7Btransform: scaleY(0.1666);%7D 29.9%25 %7Btransform: scaleY(0.125);%7D 33.3%25 %7Btransform: scaleY(0.125);%7D 36.6%25 %7Btransform: scaleY(0.1666);%7D 39.9%25 %7Btransform: scaleY(0.1666);%7D 43.3%25 %7Btransform: scaleY(0.2083);%7D 46.6%25 %7Btransform: scaleY(0.2916);%7D 49.9%25 %7Btransform: scaleY(0.375);%7D 53.3%25 %7Btransform: scaleY(0.5);%7D 56.6%25 %7Btransform: scaleY(0.5833);%7D 59.9%25 %7Btransform: scaleY(0.625);%7D 63.3%25 %7Btransform: scaleY(0.6666);%7D 66.6%25 %7Btransform: scaleY(0.6666);%7D 69.9%25 %7Btransform: scaleY(0.6666);%7D 73.3%25 %7Btransform: scaleY(0.6666);%7D 76.6%25 %7Btransform: scaleY(0.7083);%7D 79.9%25 %7Btransform: scaleY(0.75);%7D 83.3%25 %7Btransform: scaleY(0.8333);%7D 86.6%25 %7Btransform: scaleY(0.875);%7D 89.9%25 %7Btransform: scaleY(0.9166);%7D 93.3%25 %7Btransform: scaleY(0.9583);%7D 96.6%25 %7Btransform: scaleY(1);%7D %7D %23bar1 %7B transform-origin: bottom; animation: play 0.9s -0.51s infinite; %7D %23bar2 %7B transform-origin: bottom; animation: play 0.9s infinite; %7D %23bar3 %7B transform-origin: bottom; animation: play 0.9s -0.15s infinite; %7D %23bar4 %7B transform-origin: bottom; animation: play 0.9s -0.75s infinite; %7D %3C/style%3E%3C/defs%3E%3Ctitle%3Eplaying-icon%3C/title%3E%3Crect id='bar1' class='cls-1' width='4' height='24'/%3E%3Crect id='bar2' class='cls-1' x='6' width='4' height='24'/%3E%3Crect id='bar3' class='cls-1' x='12' width='4' height='24'/%3E%3Crect id='bar4' class='cls-1' x='18' width='4' height='24'/%3E%3C/svg%3E");
+  background: transparent;
+  content-visibility: hidden;
+  mask-repeat: no-repeat;
+}
+
+/* full screen artists background */
+.main-entityHeader-container.main-entityHeader-withBackgroundImage,
+.main-entityHeader-background,
+.main-entityHeader-background.main-entityHeader-overlay:after {
+  height: 50vh;
+}
+
+/* Sticky playlist header background (light glass) */
+.main-entityHeader-background,
+.main-topBar-background,
+.main-topBar-overlay {
+  background-color: var(--spice-player), 0.3 !important;
+}
+
+.artist-artistOverview-overview .main-entityHeader-withBackgroundImage h1 {
+  font-size: 120px !important;
+  line-height: 120px !important;
+}
+
+.contentSpacing {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.contentSpacing,
+.artist-artistDiscography-headerContainer {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.artist-artistOverview-overview .main-entityHeader-headerText {
+  justify-content: center;
+}
+
+/* progress bar moves smoothly */
+.x-progressBar-fillColor {
+  transition: transform 1s linear;
+}
+
+.progress-bar__slider {
+  transition: left 1s linear;
+}
+
+/* progress bar moves instant if clicked */
+*:has(.x-progressBar-fillColor, .progress-bar__slider):active
+  :is(.x-progressBar-fillColor, .progress-bar__slider) {
+  transition-duration: 0.002s;
+}
+
+/* right sidebar text */
+.Root__right-sidebar {
+  --text-base: var(--spice-text-light);
+  --background-tinted-base: var(--spice-tab-active);
+}
+
+.Root__right-sidebar a,
+.Root__right-sidebar .main-trackInfo-artists a,
+.artist-artistOnTour-timeAndVenue.artist-artistOnTour-condensed,
+.Root__right-sidebar .main-nowPlayingView-creditsSource,
+.Root__right-sidebar .main-nowPlayingView-playNextButton,
+.Root__right-sidebar .main-nowPlayingView-playNext {
+  color: var(--spicemain);
+}
+
+.main-nowPlayingView-content {
+  --text-subdued: var(--spice-sidebar-text);
+}
+
+/* add main backshadow */
+#dribbblish-back-shadow {
+  z-index: 5;
+  grid-area: main-view / main-view / now-playing-bar / main-view;
+  border-radius: var(--corner-radius);
+  pointer-events: none;
+}
+
+/* style input els */
+input {
+  background-color: var(--spice-player), 0.5 !important;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1) !important;
+  border-radius: 25px !important;
+  padding: 6px 10px 6px 48px;
+  color: var(--spice-text) !important;
+  box-shadow: 0 0 10px 5px #00000025;
+}
+
+.Root__nav-bar input {
+  border: solid 0px var(--spice-sidebar-text) !important;
+  color: var(--spice-sidebar-text) !important;
+}
+.main-home-filterChipsSection {
+  background-color: var(--spice-player) 0.05 !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid #ffffff10;
+  border-radius: var(--corner-radius) var(--corner-radius) !important;
+  box-shadow: 0 0 10px 5px #00000025;
+}
+.Root__nav-bar input::placeholder {
+  color: rgba(var(--spice-rgb-sidebar-text), 0.5) !important;
+}
+
+/* fix connect bar styles */
+.main-connectBar-connectBar {
+  color: transparent !important;
+  border-radius: 0 0 var(--corner-radius) var(--corner-radius);
+}
+
+/* topbar play button */
+.main-topBar-topbarContent .main-playButton-PlayButton > button > span {
+  inline-size: 32px;
+  block-size: 32px;
+  min-block-size: auto;
+  background-color: transparent !important;
+}
+
+.main-topBar-topbarContent .main-playButton-PlayButton svg {
+  width: 18px;
+  height: 18px;
+  background-color: transparent !important;
+  color: var(--spice-button_active);
+  backdrop-filter: blur(10px);
+}
+
+.main-topBar-topbarContent .main-playButton-PlayButton > button > span > span {
+  position: initial;
+  height: 18px;
+  background-color: transparent !important;
+  color: transparent;
+  backdrop-filter: blur(10px);
+}
+
+/* disable dynamic lyrics background */
+.lyrics-lyrics-container {
+  --lyrics-color-inactive: rgba(var(--spice-rgb-text), 0.3) !important;
+}
+
+.lyrics-lyrics-background {
+  background-color: var(--spice-main);
+}
+
+/* v1.2.14 */
+.main-yourLibraryX-libraryContainer.main-yourLibraryX-libraryIsExpanded.main-yourLibraryX-libraryIsCollapsed,
+.main-yourLibraryX-libraryRootlist.main-yourLibraryX-libraryIsExpanded:not(
+    .main-yourLibraryX-libraryIsCollapsed
+  ) {
+  padding-bottom: 0;
+}
+
+[dir="ltr"] .main-nowPlayingWidget-coverExpanded {
+  transform: none;
+}
+
+.ylx .main-coverSlotExpanded-container {
+  bottom: calc(var(--main-gap) + 70px + 10px);
+  left: calc(var(--nav-bar-width) + 10px);
+  background-color: transparent !important;
+}
+
+.ylx.connected .main-coverSlotExpanded-container {
+  bottom: calc(var(--main-gap) + 70px + 24px + 10px);
+  background-color: transparent !important;
+}
+
+/* v1.2.12 -> 1.2.13 */
+.main-buddyFeed-container {
+  background-color: transparent !important;
+  box-shadow: none;
+  overflow: initial;
+}
+
+.legacy-gridChange .main-coverSlotExpanded-container {
+  left: calc(var(--nav-bar-width) + 10px);
+}
+
+/* v1.2.0 --> 1.2.11 */
+.legacy .Root__top-container {
+  grid-template-areas:
+    "left-sidebar top-bar right-sidebar"
+    "left-sidebar main-view right-sidebar"
+    "left-sidebar now-playing-bar right-sidebar" !important;
+}
+
+.Root__top-container {
+  padding: 10px 0;
+  background-color: transparent !important;
+}
+
+.Root__right-sidebar {
+  background-color: transparent !important;
+}
+
+.Root__main-view {
+  background-color: transparent !important;
+  border-radius: var(--corner-radius) var(--corner-radius) 0 0 !important;
+  border: 0px solid #ffffff10;
+}
+
+.main-rootlist-rootlistDivider {
+  background-color: transparent !important;
+}
+
+.main-buddyFeed-activityMetadata .main-buddyFeed-username a,
+.main-buddyFeed-activityMetadata .main-buddyFeed-artistAndTrackName a,
+.main-buddyFeed-activityMetadata .main-buddyFeed-usernameAndTimestamp,
+.main-buddyFeed-activityMetadata .main-buddyFeed-playbackContextLink {
+  color: var(--spice-sidebar-text) !important;
+}
+
+.main-buddyFeed-activityMetadata .main-buddyFeed-artistAndTrackName {
+  color: var(--spice-sidebar-text);
+}
+
+.collection-icon,
+.premiumSpotifyIcon,
+.search-icon {
+  color: var(--spice-sidebar-text) !important;
+}
+
+.main-confirmDialog-container {
+  background-color: transparent;
+}
+
+.main-confirmDialog-container .TypeElement-canon-textBase {
+  color: var(--spice-text);
+}
+
+.main-confirmDialog-buttonContainer button span {
+  color: var(--spice-card);
+}
+
+.main-coverSlotExpanded-container {
+  position: fixed;
+  z-index: 2;
+  width: 250px;
+  height: 250px;
+  bottom: calc(var(--main-gap) + var(--bar-height) + 10px);
+  left: calc(var(--nav-bar-width) + 20px);
+}
+
+.connected .main-coverSlotExpanded-container {
+  bottom: calc(var(--main-gap) + var(--bar-height) + 24px + 10px);
+}
+
+.left-sidebar-collapsed .main-coverSlotExpanded-container {
+  left: 82px;
+}
+
+.main-coverSlotExpanded-container img {
+  border-radius: 25px;
+}
+
+.cover-art {
+  border-radius: 25px;
+}
+
+.left-sidebar-collapsed .Root__nav-bar {
+  width: 72px;
+}
+
+.left-sidebar-collapsed .main-rootlist-statusIcons {
+  display: none;
+}
+
+.main-navBar-navBarLinkActive {
+  background-color: var(--spice-tab-active);
+}
+
+.Root__nav-bar .main-rootlist-rootlist .os-scrollbar-handle {
+  display: none;
+}
+
+.Root__top-container:has(> .Root__top-container--right-sidebar-hidden) {
+  padding-right: 10px;
+}
+
+/* buddy feed w/ hidden text*/
+.buddyFeed-hide-text
+  .Root__top-container:not(:has(> .Root__top-container--right-sidebar-hidden))
+  .Root__right-sidebar {
+  width: 72px !important;
+}
+
+.buddyFeed-hide-text .NdQkQZhcYIEcJnRdAYcQ,
+.buddyFeed-hide-text .main-buddyFeed-header {
+  display: none;
+}
+
+.buddyFeed-hide-text .main-buddyFeed-friendActivity {
+  padding: 0 0 0 4px;
+}
+
+.buddyFeed-hide-text .main-buddyFeed-activityMetadata {
+  visibility: hidden;
+}
+
+.buddyFeed-hide-text .main-avatar-avatar > div > div > div {
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
+}
+
+.buddyFeed-hide-text .main-avatar-avatar,
+.buddyFeed-hide-text .main-avatar-avatar div,
+.buddyFeed-hide-text .main-buddyFeed-overlay {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.main-rootlist-rootlistDividerGradient {
+  background: transparent !important  ;
+}
+
+.main-collectionLinkButton-collectionLinkButton .main-collectionLinkButton-icon,
+.main-collectionLinkButton-collectionLinkButton
+  .main-collectionLinkButton-collectionLinkText {
+  opacity: 1;
+}
+
+.main-collectionLinkButton-collectionLinkButton,
+.main-createPlaylistButton-button {
+  color: var(--spice-sidebar-text);
+  opacity: 1;
+}
+
+.main-likedSongsButton-likedSongsIcon {
+  background: transparent;
+}
+
+.main-likedSongsButton-likedSongsIcon > svg {
+  height: 20px !important;
+  width: 20px !important;
+}
+
+/* style added sidebar images */
+.main-rootlist-rootlistItem a {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  height: 56px;
+  gap: 12px;
+}
+
+img.playlist-picture {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25%;
+}
+
+img.playlist-picture[src$=".svg"] {
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+}
+
+.legacy .Root__nav-bar .main-rootlist-wrapper,
+.legacy-gridChange .Root__nav-bar .main-rootlist-wrapper {
+  height: fit-content !important;
+  contain: none !important;
+}
+
+.main-navBar-mainNav li:has(> div > .active) {
+  background-color: var(--spice-tab-active);
+}
+
+.main-collectionLinkButton-selected.active {
+  background-color: transparent !important;
+}
+
+.legacy .main-navBar-mainNav li,
+.legacy-gridChange .main-navBar-mainNav li {
+  background-color: tr !important;
+}
+
+/* a.active {
+    background-color: var(--spice-tab-active) !important;
+} */
+.main-rootlist-rootlistItem:has(> .main-rootlist-rootlistItemLinkActive) {
+  background-color: var(--spice-tab-active) !important;
+}
+
+.main-rootlist-rootlistItemLink {
+  padding-left: 12px;
+}
+
+.main-rootlist-rootlistItem {
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-left: 0 !important;
+  padding-right: 8px !important;
+  border-radius: 25px;
+}
+
+.dribs-playlist-list {
+  overflow: hidden;
+}
+
+.left-sidebar-collapsed .main-rootlist-expandArrow {
+  display: none;
+}
+
+.main-navBar-navBarLink,
+.main-collectionLinkButton-collectionLinkButton,
+.main-createPlaylistButton-button {
+  height: 56px !important;
+}
+
+.Button-md-buttonSecondary-useBrowserDefaultFocusStyle {
+  border: 0px solid var(--spice-text);
+}
+
+.Button-md-buttonPrimary-useBrowserDefaultFocusStyle .ButtonInner-md {
+  color: var(--spice-text);
+}
+
+/* sidebar speaker icon */
+.CCeu9OfWSwIAJqA49n84 {
+  color: var(--spice-sidebar-text);
+}
+
+.legacy .Root__right-sidebar .os-content {
+  overflow-x: hidden;
+}
+
+.Root__right-sidebar .os-scrollbar-horizontal {
+  display: none;
+}
+
+.UyzJidwrGk3awngSGIwv,
+.poz9gZKE7xqFwgk231J4,
+.xWm_uA0Co4SXVxaO7wlB {
+  color: var(--spice-text);
+}
+
+.main-navBar-navBarLink {
+  color: var(--spice-sidebar-text);
+}
+
+.main-navBar-navBarLink:focus,
+.main-navBar-navBarLink:hover {
+  color: var(--spice-sidebar-text);
+}
+
+.main-createPlaylistButton-createPlaylistIcon {
+  background-color: transparent;
+}
+
+.main-rootlist-rootlistItemLink:link,
+.main-rootlist-rootlistItemLink:visited {
+  color: var(--spice-sidebar-text) !important;
+}
+
+.main-rootlist-expandArrow {
+  color: var(--spice-sidebar-text);
+}
+
+.main-buddyFeed-actions button,
+.main-buddyFeed-titleContainer {
+  color: var(--spice-sidebar-text) !important;
+}
+
+.main-tag-container {
+  background-color: var(--spice-main);
+}
+
+.main-buddyFeed-content {
+  height: 100%;
+}
+
+/* bottom scroll-bar popup fix */
+.Root__main-view-overlay {
+  width: 100%;
+}
+
+/* Playlist header strip: remove dark gradient */
+.main-entityHeader-background,
+.main-topBar-background,
+.main-topBar-overlay {
+  background-color: var(--spice-main) 0.35 !important;
+  background-image: none !important;
+}
+
+.Root__main-view,
+.Root__top-container,
+.global-nav .Root__main-view {
+  background-color: var(--spice-main) !important;
+  background-image: none !important;
+}
+
+li > div > div::after,
+li > div::after {
+  background-color: var(--spice-main) !important;
+}
+
+/* Light circular header buttons (back/forward, notifications, etc.) */
+.main-topBar-topbarContentRight button,
+.main-userWidget-box,
+.main-topBar-UpgradeButton,
+.main-topBar-historyButtons button {
+  background-color: var(--spice-main) !important;
+  color: var(--spice-sidebar-text) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18px);
+}
+
+/* Icons inside those buttons */
+.main-topBar-topbarContentRight button svg,
+.main-topBar-historyButtons button svg,
+.main-userWidget-box svg {
+  color: var(--spice-sidebar-text) !important;
+}
+
+/* Add playlist button in sidebar */
+.main-createPlaylistButton-button,
+.main-createPlaylistButton-createPlaylistIcon {
+  background-color: var(--spice-main) !important;
+  color: var(--spice-sidebar-text) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Left section info (profile/avatar area) */
+.main-yourLibraryX-header,
+.main-yourLibraryX-header button,
+.main-yourLibraryX-header .main-yourLibraryX-avatar {
+  background-color: transparent !important;
+  color: var(--spice-sidebar-text) !important;
+}
+
+/* Slightly larger pill and more breathing room */
+.main-nowPlayingBar-nowPlayingBar {
+  max-width: 720px;
+  width: 70%;
+  max-height: 60px;
+}
+
+.main-nowPlayingBar-center .player-controls__buttons {
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.player-controls__left,
+.player-controls__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0;
+}
+
+/* Play button dominant, others subtle */
+.main-playPauseButton-button {
+  background-color: var(--spice-accent);
+  border-radius: 999px;
+  padding: 6px;
+}
+
+.main-playPauseButton-button svg {
+  width: 22px !important;
+  height: 22px !important;
+  color: var(--spice-player_bg, #000000);
+}
+
+.main-skipForwardButton-button svg,
+.main-skipBackButton-button svg,
+.main-repeatButton-button svg,
+.main-shuffleButton-button svg {
+  width: 16px !important;
+  height: 16px !important;
+  color: var(--spice-subtext);
+}
+
+.main-skipForwardButton-button:hover svg,
+.main-skipBackButton-button:hover svg,
+.main-repeatButton-button:hover svg,
+.main-shuffleButton-button:hover svg {
+  color: var(--spice-text);
+}
+
+.player-controls__left,
+.player-controls__right {
+  gap: 0px;
+}
+
+.Q8TIE2Y2AX304EkuFSZh {
+  margin-left: 8px;
+  background-color: transparent !important;
+  color: rgba(var(--spice-text), 0.16);
+}
+
+/* Slightly shrink secondary icons so play stands out */
+.main-skipForwardButton-button svg,
+.main-skipBackButton-button svg,
+.main-repeatButton-button svg,
+.main-shuffleButton-button svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* Lighten top Shop/Home icons (global nav actions) */
+.main-globalNav-searchSection button,
+.main-globalNav-searchSection .main-topBar-UpgradeButton,
+.main-globalNav-searchSection .main-buttons-button {
+  background-color: var(--spice-main) !important;
+  color: var(--spice-sidebar-text) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18px);
+}
+
+.main-globalNav-searchSection button svg {
+  color: var(--spice-sidebar-text) !important;
+}
+
+/* Sticky playlist header background */
+.main-trackList-trackListHeader,
+.main-topBar-background.main-topBar-backgroundWithFade::after {
+  background-color: var(--spice-main) !important;
+  backdrop-filter: blur(18px);
+}
+.main-contextMenu-menu {
+  background-color: var(--spice-player) 0.9 !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: hsl(var(--shadow-color) / 0.35) 0px 2.5px 2.1px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  backdrop-filter: blur(15px) saturate(1.2) !important;
+  overflow: visible !important;
+}
+
+/* Force all core surfaces to light Tahoe greys */
+.main-rootlist-rootlist,
+.main-yourLibraryX-libraryRootlist,
+.main-trackList-trackList,
+.main-actionBarBackground-background .main-entityHeader-backgroundColor,
+.main-entityHeader-background,
+.main-entityHeader-container,
+.main-card-card,
+.main-topBar-background .main-cardImage-imageWrapper,
+.main-heroCard-card,
+.main-home-homeHeader,
+.main-home-filterChipsSection,
+.main-popupModal-modal,
+.main-buddyFeed-buddyFeedRoot,
+.main-nowPlayingBar-right,
+.main-queue-queuePage,
+.main-queue-overlay,
+.main-collection-collectionEntityGrid,
+.main-collectionCollectionGrid-collectionGrid,
+.main-collectionAlbum-container,
+.main-collectionTracks-trackList,
+.Root__right-sidebar,
+.Root__right-sidebar > aside {
+  background-image: none !important;
+  border-radius: var(--corner-radius);
+}
+
+/* Lighten any remaining “elevated” surfaces */
+div[class*="Card"],
+div[class*="card"],
+section[class*="Section"],
+.main-gridContainer-gridContainer {
+  background-color: transparent !important;
+}
+
+/* Ensure scrollable lists use light bg */
+.os-viewport,
+.os-padding {
+  background-color: var(--spice-main) !important;
+}
+
+.sb59T76Xcd92L_RhBcdz {
+  width: 35px;
+  height: 35px;
+  border-radius: 15%;
+}
+
+[Theme="Glass"],
+[Theme="Glass-light"] {
+  /* Ensure context menus/submenus render above glass layers */
+  div[class*="contextMenu"],
+  div[class*="ContextMenu"],
+  .tippy-box {
+    z-index: 9999 !important;
+    overflow: visible !important;
+    transform: none !important;
+  }
+}
+
+.encore-internal-color-text-base {
+  color: var(--spice-text);
+}
+
+.Button-buttonSecondary-small-useBrowserDefaultFocusStyle {
+  background-color: var(--spice-button), 0.5 !important;
+  color: var(--spice-text) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
