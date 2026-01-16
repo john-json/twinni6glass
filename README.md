@@ -12,22 +12,22 @@ Twinni6Glass is a glassmorphic Spicetify theme that brings a macOS Tahoe–style
 
 ## Features
 
-- Glassmorphic panels and playback bar inspired by macOS Music / Finder. [web:9]
-- Separate color schemes defined in color.ini (for example Glass and Glass-light). [web:4]
+- Glassmorphic panels and playback bar inspired by macOS Music / Finder. 
+- Separate color schemes defined in color.ini (for example Glass and Glass-light). 
 - Custom layout and spacing for the now playing bar, headers, and sidebars via user.css.
-- Optional behavior tweaks and dynamic appearance via theme.js (if enabled in your setup). [web:4]
+- Optional behavior tweaks and dynamic appearance via theme.js (if enabled in your setup). 
 
 ## 1. Prerequisites
 
 Before installing Twinni6Glass you need:
 
 - Spotify desktop client (latest stable version).
-- Spicetify CLI installed and working on your system. [web:11]
+- Spicetify CLI installed and working on your system. 
 - Basic familiarity with running terminal or PowerShell commands.
 
 Spicetify installation guide:
-- Docs: https://spicetify.app/docs/advanced-usage/installation/ [web:11]
-- Themes overview: https://spicetify.app/docs/customization/themes [web:6]
+- Docs: https://spicetify.app/docs/advanced-usage/installation/ 
+- Themes overview: https://spicetify.app/docs/customization/themes 
 
 --------------------------------
 2. Installation on macOS & Linux
@@ -35,7 +35,7 @@ Spicetify installation guide:
 
 2.1 Locate your Spicetify theme folder
 
-Default themes directory on Linux/macOS: [web:4]
+Default themes directory on Linux/macOS: 
 
 ```bash
     ~/.config/spicetify/Themes
@@ -65,7 +65,7 @@ You should end up with:
     spicetify config inject_css 1
     spicetify config replace_colors 1
 ```
-If theme.js or any theme-specific extensions in extensions/ are required, make sure extensions are enabled in your Spicetify config according to the official docs. [web:5][web:43]
+If theme.js or any theme-specific extensions in extensions/ are required, make sure extensions are enabled in your Spicetify config according to the official docs. 
 
 2.4 Select the theme and color scheme
 
@@ -73,7 +73,7 @@ If theme.js or any theme-specific extensions in extensions/ are required, make s
 
     spicetify config current_theme Twinni6Glass
 ```
-If color.ini defines multiple schemes (for example Glass and Glass-light), choose one: [web:3][web:4]
+If color.ini defines multiple schemes (for example Glass and Glass-light), choose one:
 ```bash
     spicetify config color_scheme Glass
     # or
@@ -93,7 +93,7 @@ Restart Spotify if it does not refresh automatically.
 
 3.1 Locate your Spicetify theme folder
 
-Default themes directory on Windows: [web:3]
+Default themes directory on Windows: 
 ```bash
     %appdata%\spicetify\Themes
 ```
@@ -128,7 +128,7 @@ PowerShell:
     spicetify config inject_css 1
     spicetify config replace_colors 1
 ```
-Enable extensions if needed for theme.js or any bundled extensions. [web:5][web:43]
+Enable extensions if needed for theme.js or any bundled extensions.
 
 3.4 Select the theme and color scheme
 
@@ -151,7 +151,7 @@ Restart Spotify.
 4. Switching between dark and light
 ---------------------------------------
 
-If Twinni6Glass includes multiple color schemes in color.ini (e.g. a dark “Glass” and a light “Glass-light”), you can switch between them at any time: [web:3][web:4]
+If Twinni6Glass includes multiple color schemes in color.ini (e.g. a dark “Glass” and a light “Glass-light”), you can switch between them at any time:
 
 ```bash
 
@@ -163,7 +163,7 @@ If Twinni6Glass includes multiple color schemes in color.ini (e.g. a dark “Gla
     spicetify config color_scheme Glass-light
     spicetify apply
 ```
-If theme.js contains logic to react to system appearance (such as prefers-color-scheme), make sure JavaScript/extension injection is enabled in Spicetify so that the theme can respond dynamically. [web:4][web:43]
+If theme.js contains logic to react to system appearance (such as prefers-color-scheme), make sure JavaScript/extension injection is enabled in Spicetify so that the theme can respond dynamically. 
 
 ---------------------------
 5. Uninstall / Revert
@@ -177,12 +177,12 @@ Bash / PowerShell:
     spicetify config color_scheme Spotify      # or desired scheme
     spicetify apply
 ```
-To completely stop using custom themes, follow the “Reset / Uninstall” section in the Spicetify documentation. [web:11]
+To completely stop using custom themes, follow the “Reset / Uninstall” section in the Spicetify documentation.
 
 --------------
 6. Credits
 --------------
 
-- Built for the Spicetify ecosystem: https://spicetify.app [web:12]
-- Theme structure and configuration follow the official Spicetify theme guidelines. [web:4][web:6]
+- Built for the Spicetify ecosystem: https://spicetify.app 
+- Theme structure and configuration follow the official Spicetify theme guidelines. 
 - Designed and developed by Twinni6 (replace with your preferred name/handle).
