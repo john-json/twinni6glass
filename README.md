@@ -75,9 +75,9 @@ If theme.js or any theme-specific extensions in extensions/ are required, make s
 ```
 If color.ini defines multiple schemes (for example Glass and Glass-light), choose one:
 ```bash
-    spicetify config color_scheme Glass
+    spicetify config color_scheme Glass-dark
     # or
-    spicetify config color_scheme Glass-light
+    spicetify config color_scheme Glass-light(work in progress)
 ```
 2.5 Apply changes
 
