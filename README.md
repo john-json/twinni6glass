@@ -1,5 +1,5 @@
 # twinni6glass
-Liquid Glass inspired Spicetify theme, based of of dribbblish
+Liquid Glass inspired Spicetify theme, based of dribbblish
 
 also used in the screenshot "no controls" by: (https://github.com/ohitstom/spicetify-extensions)
 
