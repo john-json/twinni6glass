@@ -8,7 +8,7 @@ also used in the screenshot "no controls" by: (https://github.com/ohitstom/spice
 
 # Twinni6Glass for Spicetify
 
-Twinni6Glass is a glassmorphic Spicetify theme that brings a macOS Tahoe–style translucent look to the Spotify desktop client. It features soft blur, rounded corners, and a clean layout designed for both dark and light appearances via Spicetify’s theme and color scheme system. [web:4][web:6]
+Twinni6Glass is a glassmorphic Spicetify theme that brings a macOS Tahoe–style translucent look to the Spotify desktop client. It features soft blur, rounded corners, and a clean layout designed for both dark and light appearances via Spicetify’s theme and color scheme system.
 
 ## Features
 
