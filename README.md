@@ -135,9 +135,9 @@ Enable extensions if needed for theme.js or any bundled extensions.
 PowerShell:
 ```bash
     spicetify config current_theme Twinni6Glass
-    spicetify config color_scheme Glass
+    spicetify config color_scheme Glass-dark
     # or
-    spicetify config color_scheme Glass-light
+    spicetify config color_scheme Glass-light (work in progress)
 ```
 3.5 Apply changes
 
@@ -155,12 +155,12 @@ If Twinni6Glass includes multiple color schemes in color.ini (e.g. a dark “Gla
 
 ```bash
 
-    spicetify config color_scheme Glass
+    spicetify config color_scheme twinni6glass
     spicetify apply
 
     # or
 
-    spicetify config color_scheme Glass-light
+    spicetify config color_scheme Glass-light(work in progress)
     spicetify apply
 ```
 If theme.js contains logic to react to system appearance (such as prefers-color-scheme), make sure JavaScript/extension injection is enabled in Spicetify so that the theme can respond dynamically. 
