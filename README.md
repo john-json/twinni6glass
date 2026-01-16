@@ -37,9 +37,9 @@ Spicetify installation guide:
 
 Default themes directory on Linux/macOS: [web:4]
 
-Bash:
+```bash
     ~/.config/spicetify/Themes
-
+```
 2.2 Copy the Twinni6Glass folder
 
 Clone or download this repository, then copy the Twinni6Glass folder into your Spicetify Themes directory.
