@@ -8,22 +8,25 @@
   --main-gap: 10px;
   --spice-card: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  box-shadow: hsl(var(--shadow-color) / 0.35) 0px 2.5px 2.1px -5px,
+  box-shadow:
+    hsl(var(--shadow-color) / 0.35) 0px 2.5px 2.1px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  backdrop-filter: blur(15px) saturate(1.2);
+  backdrop-filter: blur(15px) saturate(0.7);
 
   --fluid-color: rgba(0, 0, 0, 0.2);
 
-  --glass-bg: hsla(0, 0%, 41%, 0);
+  /*--glass-bg: hsla(0, 0%, 41%, 0);*/
   --glass-muted-bg: hsla(0, 0%, 0%, 0.046);
   --glass-hover-bg: hsla(0, 0%, 50%, 0.2);
-  --box-shadow-color: box-shadow rgba(50, 50, 93, 0.15) 0px 13px 27px -5px,
+  --box-shadow-color:
+    box-shadow rgba(50, 50, 93, 0.15) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
   --glass-alpha: 0.2;
 
   --shadow-color: 286deg 36% 40%;
-  --shadow-elevation-low: 0.3px 0.5px 0.4px hsl(var(--shadow-color) / 1),
+  --shadow-elevation-low:
+    0.3px 0.5px 0.4px hsl(var(--shadow-color) / 1),
     0.4px 0.8px 0.7px -2.5px hsl(var(--shadow-color) / 0.69),
     1.3px 2.5px 2.1px -5px hsl(var(--shadow-color) / 0.35);
 }
@@ -57,11 +60,13 @@
 }
 
 body {
-  --glue-font-family: "Google Sans Display", "SF Mono", "Roboto",
-    spotify-circular, spotify-circular-cyrillic, spotify-circular-arabic,
-    spotify-circular-hebrew, Helvetica Neue, helvetica, arial,
-    Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
-  --info-font-family: "Roboto", spotify-circular, spotify-circular-cyrillic,
+  --glue-font-family:
+    "Google Sans Display", "SF Mono", "Roboto", spotify-circular,
+    spotify-circular-cyrillic, spotify-circular-arabic, spotify-circular-hebrew,
+    Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic Pro, Meiryo,
+    MS Gothic, sans-serif;
+  --info-font-family:
+    "Roboto", spotify-circular, spotify-circular-cyrillic,
     spotify-circular-arabic, spotify-circular-hebrew, Helvetica Neue, helvetica,
     arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
   font-family: var(--glue-font-family);
@@ -157,6 +162,7 @@ body {
 
 .main-contextMenu-menuItemButton {
   color: var(--spice-text) !important;
+  background-color: rgba(var(--spice-player), 0.9);
 }
 
 .Root__right-sidebar a,
@@ -322,7 +328,8 @@ body {
   background-color: var(--spice-player) 0.1 !important;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  box-shadow: hsl(var(--shadow-color) / 0.35) 0px 2.5px 2.1px -5px,
+  box-shadow:
+    hsl(var(--shadow-color) / 0.35) 0px 2.5px 2.1px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   backdrop-filter: blur(15px) saturate(1.2);
   padding-inline: 10px !important;
@@ -399,7 +406,9 @@ body {
   color: var(--spice-text);
   background-color: var(--spice-player);
   opacity: 0;
-  transition: opacity 0.2s linear, left 0.2s linear;
+  transition:
+    opacity 0.2s linear,
+    left 0.2s linear;
 }
 
 .playback-bar:hover .prog-tooltip {
@@ -1231,13 +1240,11 @@ li > div::after {
   backdrop-filter: blur(18px);
 }
 .main-contextMenu-menu {
-  background-color: var(--spice-player) 0.9 !important;
+  background-color: var(--spice-main) !important;
   border-radius: 12px !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  box-shadow: hsl(var(--shadow-color) / 0.35) 0px 2.5px 2.1px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  backdrop-filter: blur(15px) saturate(1.2) !important;
   overflow: visible !important;
+  backdrop-filter: blur(18px);
 }
 
 /* Force all core surfaces to light Tahoe greys */
